@@ -5,11 +5,13 @@ $primary-color: rgb(41, 41, 41);
 .nav {
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 110px;
     line-height: 50px;
-    padding: 20px 30px;
+    padding: 30px 30px;
     position: fixed;
     width: 100%;
+    top: 0px;
+    background-color: #fff;
 
     .brand_Name {
         display: flex;
@@ -20,7 +22,6 @@ $primary-color: rgb(41, 41, 41);
             padding-left: 30px;
             font-size: 37px;
             color: $primary-color;
-            
 
             &::before {
                 content: "";
@@ -39,9 +40,9 @@ $primary-color: rgb(41, 41, 41);
             margin-top: 3px;
             font-family: "Poppins", sans-serif;
             font-weight: 100;
-            font-size: 18px;
+            font-size: 17px;
             text-transform: uppercase;
-            letter-spacing: .5px;
+            letter-spacing: 0.5px;
         }
     }
     .menu {
