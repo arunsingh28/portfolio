@@ -1,26 +1,61 @@
-.nav{
-    background-color: rgb(238, 176, 219);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;500&family=Roboto:wght@100&display=swap");
+
+.nav {
     display: flex;
     justify-content: space-between;
     height: 50px;
     line-height: 50px;
-    padding: 0px 30px;
-    .brand_Name{
+    padding: 20px 30px;
 
+    .brand_Name {
+        display: flex;
+
+        h1 {
+            font-family: "Poppins", sans-serif;
+            position: relative;
+            padding-left: 30px;
+            font-size: 37px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 10px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                background: #0151ff;
+                height: 27px;
+                width: 24px;
+            }
+        }
+        p {
+            margin-left: 10px;
+            margin-top: 5px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 100;
+            font-size: 20px;
+        }
     }
-    .menu{
-        
+    .menu {
         width: 35%;
-        
 
-
-        ul{
+        ul {
             list-style: none;
             display: flex;
             flex-wrap: nowrap;
             width: 100%;
             justify-content: space-around;
-            
+
+            li {
+                cursor: pointer;
+                transition: all 0.1s ease-in-out;
+                font-family: "Poppins", sans-serif;
+                font-weight: 100;
+
+                &:hover {
+                    color: #0151ff;
+                }
+            }
         }
     }
 }
