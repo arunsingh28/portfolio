@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;500&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap");
 
 $bg-color: #e6dace;
 $lucent: #f4ece6;
@@ -19,7 +20,6 @@ $primary-color: rgb(41, 41, 41);
     }
 
     .card_container {
-       
         .icard {
             z-index: -1;
             width: 380px;
@@ -40,6 +40,8 @@ $primary-color: rgb(41, 41, 41);
                 height: 200px;
                 width: 200px;
                 border-radius: 100px;
+                object-fit: cover;
+                object-position: top;
             }
             h3 {
                 margin-top: 30px;
@@ -87,7 +89,63 @@ $primary-color: rgb(41, 41, 41);
         }
         .content {
             position: absolute;
-            top: 10px;
+            top: 130px;
+            left: 48%;
+            color: $primary-color;
+
+            h1 {
+                font-family: "Poppins", sans-serif;
+                font-weight: 900;
+                font-size: 70px;
+                color: $primary-color;
+            }
+            p {
+                line-height: 100px;
+                font-size: 25px;
+                font-family: "Quicksand", sans-serif;
+            }
+            .btn_container {
+                display: flex;
+
+                button {
+                    padding: 12px 40px;
+                    background: #0151ff;
+                    border-radius: 30px;
+                    color: #ffffff;
+                    border: none;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    transition: all 0.1s ease-in-out;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: transparent;
+                        color: $primary-color;
+                        border: 1px solid #0151ff;
+                    }
+                }
+
+                button:last-child {
+                    margin-left: 25px;
+                    background: transparent;
+                    color: $primary-color;
+                    border: 1px solid $primary-color;
+
+                    &:hover {
+                        background: #0151ff;
+                        color: #ffffff;
+                    }
+                }
+            }
+            .bio {
+                font-size: 18px;
+                line-height: 30px;
+                margin-top: 50px;
+                width: 60%;
+                font-family: "Poppins", sans-serif;
+                font-weight: 100;
+            }
         }
     }
 }
