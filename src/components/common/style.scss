@@ -1,0 +1,26 @@
+.nav{
+    background-color: rgb(238, 176, 219);
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 30px;
+    .brand_Name{
+
+    }
+    .menu{
+        
+        width: 35%;
+        
+
+
+        ul{
+            list-style: none;
+            display: flex;
+            flex-wrap: nowrap;
+            width: 100%;
+            justify-content: space-around;
+            
+        }
+    }
+}
