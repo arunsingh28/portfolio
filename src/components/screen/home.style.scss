@@ -6,7 +6,7 @@ $lucent: #f4ece6;
 $base-color: #0151ff;
 $primary-color: rgb(41, 41, 41);
 .home {
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     margin-top: 110px;
     position: relative;
@@ -21,7 +21,6 @@ $primary-color: rgb(41, 41, 41);
 
     .card_container {
         .icard {
-            z-index: -1;
             width: 380px;
             height: 550px;
             background-color: $lucent;
@@ -89,7 +88,7 @@ $primary-color: rgb(41, 41, 41);
         }
         .content {
             position: absolute;
-            top: 130px;
+            top: 20%;
             left: 48%;
             color: $primary-color;
 

@@ -12,6 +12,7 @@ $primary-color: rgb(41, 41, 41);
     width: 100%;
     top: 0px;
     background-color: #fff;
+    z-index: 1;
 
     .brand_Name {
         display: flex;
@@ -96,6 +97,66 @@ $primary-color: rgb(41, 41, 41);
         .brand_Name {
             h1 {
                 font-size: 25px;
+            }
+        }
+    }
+}
+
+// footer
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+
+    .quote {
+        p {
+            font-family: "Poppins", sans-serif;
+            font-weight: 100;
+            color: $primary-color;
+            line-height: 22px;
+            font-size: 15px;
+        }
+    }
+
+    .footer_side_nav {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            b{
+                color: $primary-color;
+            }
+            a{
+                font-family: "Poppins", sans-serif;
+                font-weight: 100;
+                text-decoration: none;
+                color: $primary-color;
+                margin-top: 8px;
+                font-size: 16px;
+            }
+        }
+        .social {
+            display: flex;
+            flex-direction: column;
+            div {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-top: 8px;
+                img{
+                    height: 20px;
+                }
             }
         }
     }
